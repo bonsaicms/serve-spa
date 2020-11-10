@@ -1,5 +1,5 @@
 {
-    "name": "bonsaicms/serve-spa-module",
+    "name": "bonsaicms/serve-spa",
     "type": "package",
     "license": "MIT",
     "description": "Package for serving SPA (Single-Page-Application) from Laravel",
