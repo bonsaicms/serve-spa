@@ -10,7 +10,7 @@ class ServeSpaServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../../../../config/serve-spa.php' => config_path('serve-spa.php'),
-        ], 'config');
+        ], 'serve-spa');
         $this->mergeConfigFrom(
             __DIR__.'/../../../../config/serve-spa.php', 'serve-spa'
         );
