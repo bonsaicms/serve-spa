@@ -1,6 +1,5 @@
 {
     "name": "bonsaicms/serve-spa",
-    "type": "package",
     "license": "MIT",
     "description": "Package for serving SPA (Single-Page-Application) from Laravel",
     "authors": [
@@ -11,9 +10,14 @@
     ],
     "keywords": [
         "SPA",
+        "Single-Page-Application",
         "Bonsai CMS",
-        "laravel"
+        "Laravel"
     ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.0"
+    },
     "autoload": {
         "psr-4": {
             "BonsaiCms\\ServeSpa\\": "src/BonsaiCms/ServeSpa/"
