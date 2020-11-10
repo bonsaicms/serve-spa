@@ -1,0 +1,30 @@
+{
+    "name": "bonsaicms/serve-spa-module",
+    "type": "package",
+    "license": "MIT",
+    "description": "Package for serving SPA (Single-Page-Application) from Laravel",
+    "authors": [
+        {
+            "name": "Matej Vitaz",
+            "email": "mspiderv@gmail.com"
+        }
+    ],
+    "keywords": [
+        "SPA",
+        "Bonsai CMS",
+        "laravel"
+    ],
+    "autoload": {
+        "psr-4": {
+            "BonsaiCms\\ServeSpa\\": "src/BonsaiCms/ServeSpa/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BonsaiCms\\ServeSpa\\Providers\\ServeSpaServiceProvider",
+                "BonsaiCms\\ServeSpa\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}
