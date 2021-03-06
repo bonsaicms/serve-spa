@@ -1,7 +1,10 @@
-# Serve SPA (Single-Page-Application) from Laravel Package
+# Serve Single-Page-Application from Laravel
 
 ## Introduction
-By default, this package will register route `GET /spa` (with name `spa`) and this route will serve static SPA content from view named `spa`. For example it can be `resources/views/spa.blade.php` or `resources/views/spa.html`.
+
+The purpose of this package is to simply serve an Single-Page-Application from your Laravel backend. By 'serve' we mean to provide some content (HTML document) on the defined route as the HTTP response.
+
+By default, this package will register route `GET /spa` (with name `spa`) and the route will serve a static SPA content from view named `spa` (`resources/views/spa.blade.php` or `resources/views/spa.html` etc.).
 
 ## Installation
 ```bash2
