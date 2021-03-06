@@ -2,38 +2,75 @@
 
 return [
 
-    'routes' => [
+    /*
+    |--------------------------------------------------------------------------
+    | Array of Single Page Applications
+    |--------------------------------------------------------------------------
+    |
+    | You can define multiple items here.
+    |
+    */
+
+    'serve' => [
 
         /*
         |--------------------------------------------------------------------------
-        | Name of the Route Serving the SPA
+        | Example SPA
         |--------------------------------------------------------------------------
         */
 
-        'name' => 'spa',
+        [
 
-        /*
-        |--------------------------------------------------------------------------
-        | Routes Configuration
-        |--------------------------------------------------------------------------
-        */
+            /*
+            |--------------------------------------------------------------------------
+            | Name of the Route Serving the SPA
+            |--------------------------------------------------------------------------
+            */
 
-        'group' => [
-            'prefix' => 'spa',
-            'middleware' => 'web',
+            'routeName' => 'spa',
+
+            /*
+            |--------------------------------------------------------------------------
+            | Route Configuration
+            |--------------------------------------------------------------------------
+            |
+            | This configuration will be applied only for this SPA.
+            |
+            */
+
+            'routeConfig' => [
+                'prefix' => 'spa',
+            ],
+
+            /*
+            |--------------------------------------------------------------------------
+            | Response
+            |--------------------------------------------------------------------------
+            |
+            | Example values:
+            |
+            |  - 'someViewName'
+            |  - 'MyController@myMethod'
+            |  - [ MyController::class, 'myMethod' ]
+            |  - function () { return 'my custom response'; }
+            |
+            */
+
+            'response' => 'spa',
+
         ],
     ],
 
     /*
     |--------------------------------------------------------------------------
-    | Generated View Name
+    | Global Route Configuration
     |--------------------------------------------------------------------------
     |
-    | After building your SPA, you should generate a Laravel view which will
-    | contain the generated HTML of your SPA. Use this config option to set
-    | the name of that generated file.
+    | This configuration will be applied for all defined SPAs.
     |
     */
 
-    'view' => 'spa',
+    'globalRoutesConfig' => [
+        'middleware' => 'web',
+    ],
 ];

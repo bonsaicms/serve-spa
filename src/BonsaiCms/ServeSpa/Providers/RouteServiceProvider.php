@@ -14,6 +14,6 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        Route::group(config('serve-spa.routes.group'), __DIR__.'/../../../../routes/routes.php');
+        Route::group(config('serve-spa.globalRoutesConfig'), __DIR__.'/../../../../routes/routes.php');
     }
 }
